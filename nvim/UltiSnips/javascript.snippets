@@ -1,0 +1,35 @@
+snippet rc "React Functional Component" b
+const $1 = ($2) => {
+
+	return (
+			$3
+			)
+};
+
+export default $1;
+endsnippet
+
+snippet ufx "Use Effect" b
+useEffect(()=>{
+		$2
+
+		return () => {
+
+		}
+},[$1])
+endsnippet
+
+
+snippet cl "Console Log" b
+console.log($1)
+endsnippet
+
+snippet im "Import Module" b
+import $1 from '$2';
+endsnippet
+
+snippet mq "Media Query" b
+@media only screen and ${$1} {
+	$2
+}
+endsnippet

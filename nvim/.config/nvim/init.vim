@@ -7,6 +7,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 " Intellisense
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
@@ -33,6 +34,9 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
+
 " call PlugInstall to install new plugins
 call plug#end()
 
@@ -41,10 +45,17 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 :let mapleader =" "
 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 " LSP config
 source ~/.config/nvim/plug-config/lsp-config.vim
 luafile ~/.config/nvim/plug-config/compe-config.lua
 luafile ~/.config/nvim/lua/ts-ls.lua
+luafile ~/.config/nvim/lua/cpp-ls.lua
 
 " Prettier Config
 let g:ale_fixers = {

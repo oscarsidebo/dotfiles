@@ -33,3 +33,30 @@ snippet mq "Media Query" b
 	$2
 }
 endsnippet
+
+snippet te "create Jest test" b
+describe("$1",()=>{
+		it("$2",()=>{
+			$3
+		})
+})
+endsnippet
+
+snippet sm "xState Machine" b
+
+export const $1 = createMachine({
+id:'$1',
+context:{
+$2
+},
+initial:'',
+states:{
+$3
+}
+},{
+actions:{
+
+}
+})
+
+endsnippet

@@ -1,0 +1,64 @@
+{
+	"analytics-uuid": "731e1809-8bb3-43a7-85c9-4acb90cb85a4",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1646685189830
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "106429721323356339144",
+		"hd": "itsdandi.com",
+		"email": "oscar.sidebo@itsdandi.com",
+		"email_verified": true,
+		"at_hash": "QIykoV1V0btbHG-3Njv5lQ",
+		"iat": 1646685208,
+		"exp": 1646688808
+	},
+	"tokens": {
+		"expires_at": 1646700637516,
+		"refresh_token": "1//01CBaORKA_MhrCgYIARAAGAESNwF-L9Ir4S3IXKrT8u6tcRfp5AI6DA5lxlCcN3mWXksRChFhCkDwPJmAMvt61u7YAOwIKNrewko",
+		"scopes": [],
+		"access_token": "ya29.A0ARrdaM8iHYKYPOXgQKYNV36Db6t9CMdocl2Vrl5OYtKa5IBBPUs-GjivFpmXRdUJ_QOeycIq9YgpGf-TrcEhW7IKEkHwV0TEpZCV9olqqZCzi2vAPk_T90QlSrF8X-aaWcq4Ah443Wkune8XeZwC04FSk0lATNbBRTeO",
+		"expires_in": 3599,
+		"scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNkZDZjYTJhODFkYzJmZWE4YzM2NDI0MzFlN2UyOTZkMmQ3NWI0NDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDI5NzIxMzIzMzU2MzM5MTQ0IiwiaGQiOiJpdHNkYW5kaS5jb20iLCJlbWFpbCI6Im9zY2FyLnNpZGVib0BpdHNkYW5kaS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkJJdG9wSVQ0RDl4aTNBc3dxc2tZVWciLCJpYXQiOjE2NDY2OTcwMzgsImV4cCI6MTY0NjcwMDYzOH0.ZHnINyRM3tBT1ynp0UF_qirOgqpC85Ze7psqcyZ8lOu0YIN7dSlFmbvJc-_5hn3528oewhtY5BA3F3bClkakZGZ-z-y6nP1ju_4tICOInl6_DcQVrFsQ172OhkHS9UsTSG1QY-GlDVVCO_prnvG3KOO0FnBUV6mhx8VF5z3CmzQyfmJJjEuvpJzXGTVGNe1HrUcRluuq-4gAG00RNCuXzUyY2S7HJzh2GlaYaq1GnYmS9sxUM8R2LmMcC2vCJtAmlfrf3YH2mj70vQGe4PaxKrr2LKb0HffErvXSu9lYE6LEPbF1C1JCV9XJIEGPjXIY6tEECTNGOpOK73C0z3zjxQ"
+	},
+	"additionalAccounts": [
+		{
+			"user": {
+				"iss": "accounts.google.com",
+				"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+				"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+				"sub": "115508568161949818471",
+				"email": "sideboo@gmail.com",
+				"email_verified": true,
+				"at_hash": "cQfupLODCJ3GRGLQqIWMCQ",
+				"iat": 1646685293,
+				"exp": 1646688893
+			},
+			"tokens": {
+				"expires_at": 1646688970047,
+				"refresh_token": "1//017ojFj9pdDAuCgYIARAAGAESNwF-L9IrWumBwKBpBK_3WQWAMyc52kTvgvqYRICqgEvuL4FFPg78ag8rCO5qO983tlSkZrkvF1w",
+				"scopes": [],
+				"access_token": "ya29.A0ARrdaM9ZyXkUO65pwKkphLAUscfM5EUbMvhcZ-XqegHUOlYIZeiSCSxKdVt9vtrzWOdqU-NW9-7xos4lhfASJsRCbYkNLoex3BmMd4mwwZPtMTctami22UP8v3CpJMtGm7Hy4Wzpcs_gDAGoga-RntPb9JGN3dRGshFd",
+				"expires_in": 3599,
+				"scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+				"token_type": "Bearer",
+				"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ2M2RiZTczYWFkODhjODU0ZGUwZDhkNmMwMTRjMzZkYzI1YzQyOTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1NTA4NTY4MTYxOTQ5ODE4NDcxIiwiZW1haWwiOiJzaWRlYm9vQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoidkNaUHloZUVVdy1vOGdUaTVCbHRqdyIsImlhdCI6MTY0NjY4NTM3MSwiZXhwIjoxNjQ2Njg4OTcxfQ.AXH7OnrlIaJk85zp-mfblYzDMDeSUY1k9sokia1mk-gkxyNVAHeDUQK6t5OZ_UYjsFHgYn3wNoAx_lbN-fjagGk_U4ohM3uQT9hSkvcKCzhzN663Rx_X7HKZPEllHmyuW3Scq4jtJ0si0-ucba1yZYZVWUMdcMqMdOTPmmyTcpdyjj2t-tPLLjRL7Gyh3XDr0v81-G-RXW851SSbaNLkFnyOkWAbukOKZt1ZPwTs-pV-UaEhLkcKGeQnPffN3peKM3RGPFnumQdEc3TY_PSVrKbIjHpU2DdafXpmUpCG91Lfb2_r9OlYGaCKY8vnhhWK5mn2YAgye8NMHtAJ2Clscw"
+			}
+		}
+	],
+	"activeAccounts": {
+		"/Users/oskarsidebo/My Drive/OSCARSIDEBO/Programming/Web Builds/Dandi Project/dandi": "oscar.sidebo@itsdandi.com"
+	}
+}

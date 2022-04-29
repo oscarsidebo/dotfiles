@@ -1,0 +1,430 @@
+2022-02-14 14:19:46,424 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2022-02-14 14:19:46,433 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2022-02-14 14:19:46,441 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--tag: "gcr.io/validio-staging-ff45e/site-validio-io"]
+2022-02-14 14:19:46,487 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2022-02-14 14:19:46,833 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/validio-staging-ff45e_cloudbuild?alt=json HTTP/1.1" 200 670
+2022-02-14 14:19:47,003 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b?alt=json&maxResults=1000&prefix=validio-staging-ff45e_cloudbuild&project=validio-staging-ff45e HTTP/1.1" 200 816
+2022-02-14 14:19:47,008 INFO     root            Using default gcloudignore file:
+--------------------------------------------------
+# This file specifies files that are *not* uploaded to Google Cloud
+# using gcloud. It follows the same syntax as .gitignore, with the addition of
+# "#!include" directives (which insert the entries of the given .gitignore-style
+# file at that point).
+#
+# For more information, run:
+#   $ gcloud topic gcloudignore
+#
+.gcloudignore
+# If you would like to upload your .git directory, .gitignore file or files
+# from your .gitignore file, remove the corresponding line
+# below:
+.git
+.gitignore
+#!include:.gitignore
+
+--------------------------------------------------
+2022-02-14 14:19:47,013 DEBUG    root            Skipping file [.gitignore]
+2022-02-14 14:19:47,013 DEBUG    root            Skipping file [.env]
+2022-02-14 14:19:47,014 DEBUG    root            Skipping file [node_modules]
+2022-02-14 14:19:47,014 DEBUG    root            Skipping file [public]
+2022-02-14 14:19:47,014 DEBUG    root            Skipping file [.git]
+2022-02-14 14:19:47,015 DEBUG    root            Skipping file [.husky/.gitignore]
+2022-02-14 14:19:47,044 INFO     ___FILE_ONLY___ Creating temporary tarball archive of 114 file(s) totalling 3.6 MiB before compression.
+
+2022-02-14 14:19:47,047 DEBUG    root            Added dir [.husky]
+2022-02-14 14:19:47,047 DEBUG    root            Added dir [scripts]
+2022-02-14 14:19:47,048 DEBUG    root            Added dir [src]
+2022-02-14 14:19:47,048 DEBUG    root            Added dir [src/views]
+2022-02-14 14:19:47,048 DEBUG    root            Added dir [src/assets]
+2022-02-14 14:19:47,048 DEBUG    root            Added dir [src/views/slices]
+2022-02-14 14:19:47,049 DEBUG    root            Added dir [src/views/components]
+2022-02-14 14:19:47,049 DEBUG    root            Added dir [src/views/layouts]
+2022-02-14 14:19:47,049 DEBUG    root            Added dir [src/assets/styles]
+2022-02-14 14:19:47,049 DEBUG    root            Added dir [src/assets/javascript]
+2022-02-14 14:19:47,050 DEBUG    root            Added dir [src/assets/styles/slices]
+2022-02-14 14:19:47,050 DEBUG    root            Added dir [src/assets/styles/components]
+2022-02-14 14:19:47,050 DEBUG    root            Added dir [src/assets/javascript/slices]
+2022-02-14 14:19:47,051 DEBUG    root            Added [Dockerfile]
+2022-02-14 14:19:47,051 DEBUG    root            Added [esbuild.config.js]
+2022-02-14 14:19:47,051 DEBUG    root            Added [.stylelintrc.json]
+2022-02-14 14:19:47,052 DEBUG    root            Added [lint-staged.config.js]
+2022-02-14 14:19:47,052 DEBUG    root            Added [config.js]
+2022-02-14 14:19:47,052 DEBUG    root            Added [.stylelintignore]
+2022-02-14 14:19:47,052 DEBUG    root            Added [.prettierignore]
+2022-02-14 14:19:47,053 DEBUG    root            Added [.editorconfig]
+2022-02-14 14:19:47,053 DEBUG    root            Added [README.md]
+2022-02-14 14:19:47,053 DEBUG    root            Added [.dockerignore]
+2022-02-14 14:19:47,054 DEBUG    root            Added [.prettierrc.json]
+2022-02-14 14:19:47,082 DEBUG    root            Added [package-lock.json]
+2022-02-14 14:19:47,082 DEBUG    root            Added [package.json]
+2022-02-14 14:19:47,082 DEBUG    root            Added [.eslintignore]
+2022-02-14 14:19:47,083 DEBUG    root            Added [.gitlab-ci.yml]
+2022-02-14 14:19:47,083 DEBUG    root            Added [.browserslistrc]
+2022-02-14 14:19:47,083 DEBUG    root            Added [postcss.config.js]
+2022-02-14 14:19:47,084 DEBUG    root            Added [.eslintrc.json]
+2022-02-14 14:19:47,084 DEBUG    root            Added [.husky/pre-commit]
+2022-02-14 14:19:47,084 DEBUG    root            Added [scripts/build.js]
+2022-02-14 14:19:47,085 DEBUG    root            Added [scripts/dev.js]
+2022-02-14 14:19:47,085 DEBUG    root            Added [src/logger.js]
+2022-02-14 14:19:47,085 DEBUG    root            Added [src/server.js]
+2022-02-14 14:19:47,085 DEBUG    root            Added [src/link-resolver.js]
+2022-02-14 14:19:47,086 DEBUG    root            Added [src/uuid.js]
+2022-02-14 14:19:47,086 DEBUG    root            Added [src/views/page.liquid]
+2022-02-14 14:19:47,086 DEBUG    root            Added [src/views/components.liquid]
+2022-02-14 14:19:47,086 DEBUG    root            Added [src/views/error.liquid]
+2022-02-14 14:19:47,087 DEBUG    root            Added [src/views/home.liquid]
+2022-02-14 14:19:47,087 DEBUG    root            Added [src/views/slices/testimonial-hero.liquid]
+2022-02-14 14:19:47,087 DEBUG    root            Added [src/views/slices/text-hero.liquid]
+2022-02-14 14:19:47,088 DEBUG    root            Added [src/views/slices/feature-list.liquid]
+2022-02-14 14:19:47,088 DEBUG    root            Added [src/views/slices/meet-the-team.liquid]
+2022-02-14 14:19:47,088 DEBUG    root            Added [src/views/slices/logos.liquid]
+2022-02-14 14:19:47,088 DEBUG    root            Added [src/views/slices/pricing-plan.liquid]
+2022-02-14 14:19:47,088 DEBUG    root            Added [src/views/slices/legal.liquid]
+2022-02-14 14:19:47,089 DEBUG    root            Added [src/views/slices/call-to-action.liquid]
+2022-02-14 14:19:47,089 DEBUG    root            Added [src/views/slices/frequently-asked-questions.liquid]
+2022-02-14 14:19:47,089 DEBUG    root            Added [src/views/slices/hiring.liquid]
+2022-02-14 14:19:47,090 DEBUG    root            Added [src/views/slices/image-with-text.liquid]
+2022-02-14 14:19:47,090 DEBUG    root            Added [src/views/slices/icon-card-group.liquid]
+2022-02-14 14:19:47,090 DEBUG    root            Added [src/views/slices/landing-page-hero.liquid]
+2022-02-14 14:19:47,090 DEBUG    root            Added [src/views/slices/wait-list.liquid]
+2022-02-14 14:19:47,090 DEBUG    root            Added [src/views/slices/contact-us.liquid]
+2022-02-14 14:19:47,091 DEBUG    root            Added [src/views/slices/time-line.liquid]
+2022-02-14 14:19:47,091 DEBUG    root            Added [src/views/slices/medium-articles.liquid]
+2022-02-14 14:19:47,091 DEBUG    root            Added [src/views/slices/text-with-image.liquid]
+2022-02-14 14:19:47,091 DEBUG    root            Added [src/views/slices/supported-tech-stacks.liquid]
+2022-02-14 14:19:47,092 DEBUG    root            Added [src/views/slices/testimonial-slider.liquid]
+2022-02-14 14:19:47,092 DEBUG    root            Added [src/views/slices/partners.liquid]
+2022-02-14 14:19:47,092 DEBUG    root            Added [src/views/components/collapsible.liquid]
+2022-02-14 14:19:47,092 DEBUG    root            Added [src/views/components/link-button.liquid]
+2022-02-14 14:19:47,092 DEBUG    root            Added [src/views/components/cookie-bar.liquid]
+2022-02-14 14:19:47,093 DEBUG    root            Added [src/views/layouts/slice.liquid]
+2022-02-14 14:19:47,093 DEBUG    root            Added [src/views/layouts/header.liquid]
+2022-02-14 14:19:47,093 DEBUG    root            Added [src/views/layouts/main.liquid]
+2022-02-14 14:19:47,093 DEBUG    root            Added [src/views/layouts/footer.liquid]
+2022-02-14 14:19:47,094 DEBUG    root            Added [src/assets/favicon-16x16.png]
+2022-02-14 14:19:47,098 DEBUG    root            Added [src/assets/graphic-line-circle-blue-reversed.png]
+2022-02-14 14:19:47,100 DEBUG    root            Added [src/assets/favicon.ico]
+2022-02-14 14:19:47,100 DEBUG    root            Added [src/assets/icon-x.svg]
+2022-02-14 14:19:47,101 DEBUG    root            Added [src/assets/icon-plus.svg]
+2022-02-14 14:19:47,104 DEBUG    root            Added [src/assets/graphic-line-purple.png]
+2022-02-14 14:19:47,108 DEBUG    root            Added [src/assets/graphic-line-circle-blue.png]
+2022-02-14 14:19:47,112 DEBUG    root            Added [src/assets/graphic-line-circle-yellow-reversed.png]
+2022-02-14 14:19:47,112 DEBUG    root            Added [src/assets/icon-minus.svg]
+2022-02-14 14:19:47,117 DEBUG    root            Added [src/assets/graphic-line-circle-teal.png]
+2022-02-14 14:19:47,120 DEBUG    root            Added [src/assets/graphic-line-red.png]
+2022-02-14 14:19:47,124 DEBUG    root            Added [src/assets/graphic-line-circle-yellow.png]
+2022-02-14 14:19:47,128 DEBUG    root            Added [src/assets/medium.xml]
+2022-02-14 14:19:47,132 DEBUG    root            Added [src/assets/graphic-line-circle-red.png]
+2022-02-14 14:19:47,135 DEBUG    root            Added [src/assets/graphic-line-yellow.png]
+2022-02-14 14:19:47,138 DEBUG    root            Added [src/assets/graphic-line-teal.png]
+2022-02-14 14:19:47,147 DEBUG    root            Added [src/assets/thumbnail.png]
+2022-02-14 14:19:47,152 DEBUG    root            Added [src/assets/graphic-line-circle-purple.png]
+2022-02-14 14:19:47,156 DEBUG    root            Added [src/assets/graphic-line-circle-teal-reversed.png]
+2022-02-14 14:19:47,160 DEBUG    root            Added [src/assets/graphic-line-circle-red-reversed.png]
+2022-02-14 14:19:47,160 DEBUG    root            Added [src/assets/icon-burger.svg]
+2022-02-14 14:19:47,164 DEBUG    root            Added [src/assets/graphic-line-circle-purple-reversed.png]
+2022-02-14 14:19:47,165 DEBUG    root            Added [src/assets/icon-validio.svg]
+2022-02-14 14:19:47,168 DEBUG    root            Added [src/assets/graphic-line-blue.png]
+2022-02-14 14:19:47,168 DEBUG    root            Added [src/assets/favicon-32x32.png]
+2022-02-14 14:19:47,169 DEBUG    root            Added [src/assets/styles/global.css]
+2022-02-14 14:19:47,169 DEBUG    root            Added [src/assets/styles/index.css]
+2022-02-14 14:19:47,169 DEBUG    root            Added [src/assets/styles/header.css]
+2022-02-14 14:19:47,169 DEBUG    root            Added [src/assets/styles/fonts.css]
+2022-02-14 14:19:47,169 DEBUG    root            Added [src/assets/styles/footer.css]
+2022-02-14 14:19:47,170 DEBUG    root            Added [src/assets/styles/slices/partners.css]
+2022-02-14 14:19:47,170 DEBUG    root            Added [src/assets/styles/slices/icon-card-group.css]
+2022-02-14 14:19:47,170 DEBUG    root            Added [src/assets/styles/slices/frequently-asked-questions.css]
+2022-02-14 14:19:47,171 DEBUG    root            Added [src/assets/styles/slices/pricing-plan.css]
+2022-02-14 14:19:47,171 DEBUG    root            Added [src/assets/styles/slices/hiring.css]
+2022-02-14 14:19:47,171 DEBUG    root            Added [src/assets/styles/slices/contact-us.css]
+2022-02-14 14:19:47,172 DEBUG    root            Added [src/assets/styles/slices/landing-page-hero.css]
+2022-02-14 14:19:47,172 DEBUG    root            Added [src/assets/styles/slices/text-hero.css]
+2022-02-14 14:19:47,172 DEBUG    root            Added [src/assets/styles/slices/testimonial-hero.css]
+2022-02-14 14:19:47,172 DEBUG    root            Added [src/assets/styles/slices/wait-list.css]
+2022-02-14 14:19:47,173 DEBUG    root            Added [src/assets/styles/slices/medium-articles.css]
+2022-02-14 14:19:47,173 DEBUG    root            Added [src/assets/styles/slices/text-with-image.css]
+2022-02-14 14:19:47,173 DEBUG    root            Added [src/assets/styles/slices/feature-list.css]
+2022-02-14 14:19:47,173 DEBUG    root            Added [src/assets/styles/slices/testimonial-slider.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/legal.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/call-to-action.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/image-with-text.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/supported-tech-stacks.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/logos.css]
+2022-02-14 14:19:47,174 DEBUG    root            Added [src/assets/styles/slices/meet-the-team.css]
+2022-02-14 14:19:47,175 DEBUG    root            Added [src/assets/styles/slices/time-line.css]
+2022-02-14 14:19:47,175 DEBUG    root            Added [src/assets/styles/components/cookie-bar.css]
+2022-02-14 14:19:47,175 DEBUG    root            Added [src/assets/styles/components/collapsible.css]
+2022-02-14 14:19:47,175 DEBUG    root            Added [src/assets/javascript/utils.js]
+2022-02-14 14:19:47,176 DEBUG    root            Added [src/assets/javascript/app.js]
+2022-02-14 14:19:47,176 DEBUG    root            Added [src/assets/javascript/slices/icon-card.js]
+2022-02-14 14:19:47,176 DEBUG    root            Added [src/assets/javascript/slices/landing-hero.js]
+2022-02-14 14:19:47,176 INFO     ___FILE_ONLY___ Some files were not included in the source upload.
+
+Check the gcloud log [/Users/oskarsidebo/.config/gcloud/logs/2022.02.14/14.19.46.422994.log] to see which files and the contents of the
+default gcloudignore file used (see `$ gcloud topic gcloudignore` to learn
+more).
+
+
+2022-02-14 14:19:47,176 INFO     ___FILE_ONLY___ Uploading tarball of [.] to [gs://validio-staging-ff45e_cloudbuild/source/1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz]
+
+2022-02-14 14:19:47,178 INFO     root            Uploading [/var/folders/7m/hd37924s6r12611dlgry72y40000gn/T/tmpppx7zqe0/file.tgz] to [validio-staging-ff45e_cloudbuild/source/1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz]
+2022-02-14 14:19:52,920 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /upload/storage/v1/b/validio-staging-ff45e_cloudbuild/o?alt=json&name=source%2F1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz&uploadType=multipart HTTP/1.1" 200 1025
+2022-02-14 14:19:52,928 DEBUG    root            submitting build: <Build
+ images: ['gcr.io/validio-staging-ff45e/site-validio-io']
+ secrets: []
+ source: <Source
+ storageSource: <StorageSource
+ bucket: 'validio-staging-ff45e_cloudbuild'
+ generation: 1644877192729102
+ object: 'source/1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz'>>
+ steps: [<BuildStep
+ args: ['build', '--network', 'cloudbuild', '--no-cache', '-t', 'gcr.io/validio-staging-ff45e/site-validio-io', '.']
+ env: []
+ name: 'gcr.io/cloud-builders/docker'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ tags: []
+ warnings: []>
+2022-02-14 14:19:52,947 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2022-02-14 14:19:54,867 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/validio-staging-ff45e/locations/global/builds?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:54,881 INFO     ___FILE_ONLY___ Created [https://cloudbuild.googleapis.com/v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498].
+
+2022-02-14 14:19:54,881 INFO     ___FILE_ONLY___ Logs are available at [https://console.cloud.google.com/cloud-build/builds/d9b6338e-21c4-4ab4-95da-352d88003498?project=876146789641].
+
+2022-02-14 14:19:55,098 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:55,117 DEBUG    root            GCS logfile url is https://storage.googleapis.com/876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt
+2022-02-14 14:19:55,127 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2022-02-14 14:19:55,319 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:55,510 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 164
+2022-02-14 14:19:55,511 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:19:56,512 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:56,669 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 208
+2022-02-14 14:19:56,670 DEBUG    root            Reading GCS logfile: 206 (read 208 bytes)
+2022-02-14 14:19:56,670 INFO     ___FILE_ONLY___ ---------------------------------------------------------------------------------------------------------------- REMOTE BUILD OUTPUT ----------------------------------------------------------------------------------------------------------------
+
+2022-02-14 14:19:56,671 INFO     ___FILE_ONLY___ starting build "d9b6338e-21c4-4ab4-95da-352d88003498"
+
+FETCHSOURCE
+Fetching storage object: gs://validio-staging-ff45e_cloudbuild/source/1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz#1644877192729102
+
+2022-02-14 14:19:57,714 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:57,796 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 166
+2022-02-14 14:19:57,797 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:19:58,880 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:19:58,917 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 166
+2022-02-14 14:19:58,918 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:00,073 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:00,077 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 378
+2022-02-14 14:20:00,078 DEBUG    root            Reading GCS logfile: 206 (read 378 bytes)
+2022-02-14 14:20:00,078 INFO     ___FILE_ONLY___ Copying gs://validio-staging-ff45e_cloudbuild/source/1644877186.45253-dcb6eae6fcc442d3919541ff8e037eb0.tgz#1644877192729102...
+/ [0 files][    0.0 B/  3.0 MiB]                                                / [1 files][  3.0 MiB/  3.0 MiB]                                                
+Operation completed over 1 objects/3.0 MiB.                                      
+BUILD
+
+2022-02-14 14:20:01,228 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:01,229 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 63
+2022-02-14 14:20:01,231 DEBUG    root            Reading GCS logfile: 206 (read 63 bytes)
+2022-02-14 14:20:01,231 INFO     ___FILE_ONLY___ Already have image (with digest): gcr.io/cloud-builders/docker
+
+2022-02-14 14:20:02,375 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:02,404 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 119
+2022-02-14 14:20:02,405 DEBUG    root            Reading GCS logfile: 206 (read 119 bytes)
+2022-02-14 14:20:02,406 INFO     ___FILE_ONLY___ Sending build context to Docker daemon  705.5kB
+Step 1/12 : FROM node:16.8-slim
+16.8-slim: Pulling from library/node
+
+2022-02-14 14:20:03,544 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:03,567 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 491
+2022-02-14 14:20:03,569 DEBUG    root            Reading GCS logfile: 206 (read 491 bytes)
+2022-02-14 14:20:03,569 INFO     ___FILE_ONLY___ a330b6cecb98: Pulling fs layer
+4579d311ffe3: Pulling fs layer
+4968fa2cb2d5: Pulling fs layer
+430aed44f430: Pulling fs layer
+dfe42b9e2fad: Pulling fs layer
+430aed44f430: Waiting
+dfe42b9e2fad: Waiting
+4579d311ffe3: Verifying Checksum
+4579d311ffe3: Download complete
+a330b6cecb98: Verifying Checksum
+a330b6cecb98: Download complete
+430aed44f430: Verifying Checksum
+430aed44f430: Download complete
+4968fa2cb2d5: Download complete
+dfe42b9e2fad: Verifying Checksum
+dfe42b9e2fad: Download complete
+
+2022-02-14 14:20:04,692 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:04,694 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:04,744 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:05,871 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 56
+2022-02-14 14:20:05,873 DEBUG    root            Reading GCS logfile: 206 (read 56 bytes)
+2022-02-14 14:20:05,873 INFO     ___FILE_ONLY___ a330b6cecb98: Pull complete
+4579d311ffe3: Pull complete
+
+2022-02-14 14:20:05,940 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:07,043 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 257
+2022-02-14 14:20:07,045 DEBUG    root            Reading GCS logfile: 206 (read 257 bytes)
+2022-02-14 14:20:07,045 INFO     ___FILE_ONLY___ 4968fa2cb2d5: Pull complete
+430aed44f430: Pull complete
+dfe42b9e2fad: Pull complete
+Digest: sha256:6eaf500d9deddacc32aad5797909960030481387b78b673d495c5a86be2b05f8
+Status: Downloaded newer image for node:16.8-slim
+ ---> 4bf10f8ab824
+Step 2/12 : EXPOSE 3000
+
+2022-02-14 14:20:07,132 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:08,168 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:08,169 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:08,327 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:09,332 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 532
+2022-02-14 14:20:09,334 DEBUG    root            Reading GCS logfile: 206 (read 532 bytes)
+2022-02-14 14:20:09,336 INFO     ___FILE_ONLY___  ---> Running in 1ad7c557e559
+Removing intermediate container 1ad7c557e559
+ ---> a64a5134fd74
+Step 3/12 : ARG ENV_FILE=.env
+ ---> Running in 42f655cd9e94
+Removing intermediate container 42f655cd9e94
+ ---> 9bb38751b42d
+Step 4/12 : ENV NODE_ENV=production
+ ---> Running in 83dc24c37629
+Removing intermediate container 83dc24c37629
+ ---> 41d5405c4099
+Step 5/12 : WORKDIR /app
+ ---> Running in 79f831da5656
+Removing intermediate container 79f831da5656
+ ---> 416fd5d90026
+Step 6/12 : RUN npm install pm2 -g
+ ---> Running in 98ed0323ced7
+
+2022-02-14 14:20:09,476 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:10,458 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:10,459 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:10,622 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:11,579 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:11,580 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:11,815 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:12,709 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:12,710 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:12,960 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:13,834 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:13,835 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:14,107 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:14,966 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:14,967 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:15,259 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:16,088 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:16,089 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:16,401 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:17,232 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:17,234 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:17,597 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:18,361 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:18,363 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:18,743 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:19,534 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 225
+2022-02-14 14:20:19,535 DEBUG    root            Reading GCS logfile: 206 (read 225 bytes)
+2022-02-14 14:20:19,536 INFO     ___FILE_ONLY___ [91mnpm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+2022-02-14 14:20:19,897 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:20,661 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:20,662 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:21,096 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:21,829 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 409
+2022-02-14 14:20:21,831 DEBUG    root            Reading GCS logfile: 206 (read 409 bytes)
+2022-02-14 14:20:21,831 INFO     ___FILE_ONLY___ [0m
+added 183 packages, and audited 184 packages in 11s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[91mnpm notice[0m[91m 
+npm[0m[91m notice[0m[91m New major version of npm available! 7.21.0 -> 8.5.0
+npm[0m[91m notice Changelog: <https://github.com/npm/cli/releases/tag/v8.5.0>
+npm notice[0m[91m Run `npm install -g npm@8.5.0` to update!
+npm notice
+
+2022-02-14 14:20:22,243 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:22,946 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:22,948 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:23,388 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:24,108 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 273
+2022-02-14 14:20:24,110 DEBUG    root            Reading GCS logfile: 206 (read 273 bytes)
+2022-02-14 14:20:24,110 INFO     ___FILE_ONLY___ [0mRemoving intermediate container 98ed0323ced7
+ ---> f5f17c0fa379
+Step 7/12 : COPY package.json package.json
+ ---> f1c265c95dd5
+Step 8/12 : COPY package-lock.json package-lock.json
+ ---> 1bd9dcd15979
+Step 9/12 : RUN npm install --production
+ ---> Running in d80ca2a9e8d1
+
+2022-02-14 14:20:24,795 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:25,238 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:25,240 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:25,985 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:26,354 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:26,355 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:27,185 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:27,476 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:27,477 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:28,384 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:28,601 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:28,602 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:29,542 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:29,722 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:29,724 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:30,691 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:30,856 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:30,857 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:31,884 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:32,021 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 202
+2022-02-14 14:20:32,022 DEBUG    root            Reading GCS logfile: 206 (read 202 bytes)
+2022-02-14 14:20:32,023 INFO     ___FILE_ONLY___ 
+> site-validio-io@1.0.0 prepare
+> ${CI} || husky install
+
+
+added 143 packages, and audited 144 packages in 6s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+2022-02-14 14:20:33,049 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:33,201 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 206 358
+2022-02-14 14:20:33,202 DEBUG    root            Reading GCS logfile: 206 (read 358 bytes)
+2022-02-14 14:20:33,202 INFO     ___FILE_ONLY___ Removing intermediate container d80ca2a9e8d1
+ ---> b4d5f9802191
+Step 10/12 : COPY ./src ./src
+ ---> 9746161c050b
+Step 11/12 : COPY ./public ./public
+COPY failed: file not found in build context or excluded by .dockerignore: stat public: file does not exist
+ERROR
+ERROR: build step 0 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1
+
+2022-02-14 14:20:34,192 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/validio-staging-ff45e/locations/global/builds/d9b6338e-21c4-4ab4-95da-352d88003498?alt=json HTTP/1.1" 200 None
+2022-02-14 14:20:34,317 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:34,319 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:35,483 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /876146789641.cloudbuild-logs.googleusercontent.com/log-d9b6338e-21c4-4ab4-95da-352d88003498.txt HTTP/1.1" 416 167
+2022-02-14 14:20:35,483 DEBUG    root            Reading GCS logfile: 416 (no new content; keep polling)
+2022-02-14 14:20:35,484 INFO     ___FILE_ONLY___ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2022-02-14 14:20:35,484 INFO     ___FILE_ONLY___ 
+BUILD FAILURE: Build step failure: build step 0 "gcr.io/cloud-builders/docker" failed: step exited with non-zero status: 1
+
+2022-02-14 14:20:35,485 DEBUG    root            (gcloud.builds.submit) build d9b6338e-21c4-4ab4-95da-352d88003498 completed with status "FAILURE"
+Traceback (most recent call last):
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/submit.py", line 164, in Run
+    build, _ = submit_util.Build(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 630, in Build
+    raise FailedBuildException(build)
+googlecloudsdk.command_lib.builds.submit_util.FailedBuildException: build d9b6338e-21c4-4ab4-95da-352d88003498 completed with status "FAILURE"
+2022-02-14 14:20:35,502 ERROR    root            (gcloud.builds.submit) build d9b6338e-21c4-4ab4-95da-352d88003498 completed with status "FAILURE"
+2022-02-14 14:20:35,510 DEBUG    root            Metrics reporting process started...

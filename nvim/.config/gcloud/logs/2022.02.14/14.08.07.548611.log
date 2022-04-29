@@ -1,0 +1,45 @@
+2022-02-14 14:08:07,549 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2022-02-14 14:08:07,559 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2022-02-14 14:08:07,566 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--tag: "gcr.io/validio-staging-ff45e/site-validio-io"]
+2022-02-14 14:08:07,566 DEBUG    root            (gcloud.builds.submit) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+Traceback (most recent call last):
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/submit.py", line 154, in Run
+    build_config = submit_util.CreateBuildConfig(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 438, in CreateBuildConfig
+    build_config = _SetSource(build_config, messages, is_specified_source,
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 231, in _SetSource
+    default_bucket_name = staging_bucket_util.GetDefaultStagingBucket()
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/staging_bucket_util.py", line 30, in GetDefaultStagingBucket
+    safe_project = (properties.VALUES.core.project.Get(required=True)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3184, in Get
+    value = _GetProperty(self, named_configs.ActivePropertiesFile.Load(),
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3504, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2022-02-14 14:08:07,573 ERROR    root            (gcloud.builds.submit) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2022-02-14 14:08:07,585 DEBUG    root            Metrics reporting process started...

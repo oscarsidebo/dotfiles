@@ -1,0 +1,73 @@
+2022-02-14 14:09:13,602 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2022-02-14 14:09:13,610 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2022-02-14 14:09:13,617 DEBUG    root            Running [gcloud.builds.submit] with arguments: [--tag: "gcr.io/validio-staging-ff45e/site-validio-io"]
+2022-02-14 14:09:13,618 DEBUG    root            (gcloud.builds.submit) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Traceback (most recent call last):
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/submit.py", line 154, in Run
+    build_config = submit_util.CreateBuildConfig(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 438, in CreateBuildConfig
+    build_config = _SetSource(build_config, messages, is_specified_source,
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/command_lib/builds/submit_util.py", line 233, in _SetSource
+    gcs_client = storage_api.StorageClient()
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_api.py", line 91, in __init__
+    self.client = client or storage_util.GetClient()
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/storage_util.py", line 294, in GetClient
+    return core_apis.GetClientInstance('storage', 'v1')
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 244, in GetClientInstance
+    return apis_internal._GetClientInstance(api_name, api_version, no_http, None,
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 168, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 80, in GetApitoolsTransport
+    session = requests.GetSession(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 78, in GetSession
+    session = request_wrapper.WrapQuota(session, enable_resource_quota,
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 111, in WrapQuota
+    quota_project = self.QuotaProject(enable_resource_quota,
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transport.py", line 55, in QuotaProject
+    creds = store.LoadIfEnabled(allow_account_impersonation, use_google_auth)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 455, in LoadIfEnabled
+    return Load(
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 560, in Load
+    cred = _Load(account, scopes, prevent_refresh, use_google_auth)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 700, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2022-02-14 14:09:13,632 ERROR    root            (gcloud.builds.submit) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account:
+
+    $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2022-02-14 14:09:13,639 DEBUG    root            Metrics reporting process started...

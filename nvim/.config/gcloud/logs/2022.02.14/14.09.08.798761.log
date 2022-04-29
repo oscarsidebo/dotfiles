@@ -1,0 +1,11 @@
+2022-02-14 14:09:08,799 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-02-14 14:09:08,813 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2022-02-14 14:09:08,815 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "validio-staging-ff45e"]
+2022-02-14 14:09:08,815 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2022-02-14 14:09:08,816 INFO     root            Display format: "default"
+2022-02-14 14:09:08,816 DEBUG    root            Checking for updates...
+2022-02-14 14:09:08,854 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-02-14 14:09:09,196 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 179444
+2022-02-14 14:09:09,473 DEBUG    root            Updating notification cache...
+2022-02-14 14:09:09,489 DEBUG    root            Metrics reporting process started...

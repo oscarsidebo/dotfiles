@@ -1,4 +1,3 @@
-
 call plug#begin('~/.config/nvim/bundle') 
 Plug 'zchee/deoplete-jedi' 
 Plug 'pangloss/vim-javascript' 
@@ -13,6 +12,14 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+
+" Svelte
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
+" Solidity
+Plug 'tomlion/vim-solidity'
 
 " Prettier
 Plug 'dense-analysis/ale'
@@ -34,8 +41,14 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+" Debugger
 Plug 'puremourning/vimspector'
-Plug 'szw/vim-maximizer'
+
+" graphql
+Plug 'jparise/vim-graphql'
+
+" Git CoPilot
+Plug 'github/copilot.vim'
 
 " call PlugInstall to install new plugins
 call plug#end()
@@ -45,11 +58,27 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 :let mapleader =" "
 
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+" Fugutive mappings
+nnoremap <leader>gd :Gvdiffsplit!<CR>
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>
+
+
+" VimSpector config
+nnoremap <Leader>dd :call vimspector#Launch()<CR>
+nnoremap <Leader>dr :call vimspector#Reset()<CR>
+nnoremap <Leader>dc :call vimspector#Continue()<CR>
+
+nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+
+nmap <Leader>dk <Plug>VimspectorRestart
+nmap <Leader>dh <Plug>VimspectorStepOut
+nmap <Leader>di <Plug>VimspectorStepInto
+nmap <Leader>do <Plug>VimspectorStepOver
+
+
+
 
 " LSP config
 source ~/.config/nvim/plug-config/lsp-config.vim
@@ -61,7 +90,12 @@ luafile ~/.config/nvim/lua/cpp-ls.lua
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'typescript': ['prettier']
 \}
+
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
 
 " UltiSnips Config
 let g:UltiSnipsEditSplit="vertical"
@@ -76,10 +110,14 @@ let g:user_emmet_settings = {
     \  },
   \}
 
-
-
-let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+" basic shortcuts
+nnoremap <leader>w <cmd>:w<CR>
+nnoremap <leader>q <cmd>:q<CR>
+nnoremap <leader>v <cmd>:vsp<CR>
+nnoremap <leader>e <cmd>:Ex<CR>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>l <C-w>l
+nnoremap <leader>l <C-w>l
 
 " basics
 filetype plugin indent on

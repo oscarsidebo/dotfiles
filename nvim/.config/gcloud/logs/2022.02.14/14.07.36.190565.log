@@ -1,0 +1,18 @@
+2022-02-14 14:07:36,191 DEBUG    root            Loaded Command Group: ['gcloud', 'builds']
+2022-02-14 14:07:36,193 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/deploy]
+2022-02-14 14:07:36,224 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'submit']
+2022-02-14 14:07:36,239 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'worker_pools']
+2022-02-14 14:07:36,240 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/enterprise_config]
+2022-02-14 14:07:36,242 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'list']
+2022-02-14 14:07:36,249 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/approve.yaml]
+2022-02-14 14:07:36,252 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/reject.yaml]
+2022-02-14 14:07:36,253 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'log']
+2022-02-14 14:07:36,254 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/runs]
+2022-02-14 14:07:36,255 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'describe']
+2022-02-14 14:07:36,256 DEBUG    root            Loaded Command Group: ['gcloud', 'builds', 'cancel']
+2022-02-14 14:07:36,257 DEBUG    root            No implementation for release track [GA] for element: [/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/builds/triggers]
+2022-02-14 14:07:36,257 ERROR    root            (gcloud.builds) unrecognized arguments: --tag 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+2022-02-14 14:07:36,262 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,41 @@
+2022-02-14 14:08:44,907 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-02-14 14:08:44,936 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2022-02-14 14:08:44,937 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "VALUE"]
+2022-02-14 14:08:44,937 DEBUG    root            (gcloud.config.set) The project property must be set to a valid project ID, not the project name [VALUE]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+Traceback (most recent call last):
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/surface/config/set.py", line 115, in Run
+    properties.PersistProperty(prop, args.value, scope=scope)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3440, in PersistProperty
+    prop.Validate(value)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3214, in Validate
+    self.__validator(value)
+  File "/Users/oskarsidebo/Desktop/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 1860, in ProjectValidator
+    raise InvalidProjectError(
+googlecloudsdk.core.properties.InvalidProjectError: The project property must be set to a valid project ID, not the project name [VALUE]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+2022-02-14 14:08:44,941 ERROR    root            (gcloud.config.set) The project property must be set to a valid project ID, not the project name [VALUE]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+2022-02-14 14:08:44,946 DEBUG    root            Metrics reporting process started...

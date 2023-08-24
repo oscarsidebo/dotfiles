@@ -6,6 +6,17 @@ require('packer').startup(function()
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-tree/nvim-web-devicons'
+  use 'szw/vim-maximizer'
+
+  use({
+      "kylechui/nvim-surround",
+      tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+      config = function()
+          require("nvim-surround").setup({
+              -- Configuration here, or leave empty to use defaults
+          })
+      end
+  })
 
   use {
     "nvim-telescope/telescope-file-browser.nvim",
@@ -26,7 +37,9 @@ require('packer').startup(function()
   use 'tomlion/vim-solidity'
   
   -- Prettier
-  use { 'prettier/vim-prettier', run = 'yarn install --frozen-lockfile --production' }
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
 
   -- Syntax Highlighting
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
@@ -58,8 +71,8 @@ require('packer').startup(function()
   -- graphql
   use 'jparise/vim-graphql'
   
-  -- Git CoPilot
+  -- AI
   use 'github/copilot.vim'
-  use 'szw/vim-maximizer'
+
 end)
 

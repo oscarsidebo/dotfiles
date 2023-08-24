@@ -13,9 +13,9 @@ vim.api.nvim_set_keymap('n', '<Leader>dd', ':call vimspector#Launch()<CR>', { no
 -- (similar mappings for other VimSpector configs...)
 
 -- Prettier
-vim.api.nvim_set_keymap('n', '<Leader>pp', ':Prettier<CR>', { noremap = true, silent = true })
-vim.g.prettier_autoformat = 1
-vim.g.prettier_autoformat_require_pragma = 0
+-- vim.api.nvim_set_keymap('n', '<Leader>pp', ':Prettier<CR>', { noremap = true, silent = true })
+--vim.g.prettier_autoformat = 1
+-- vim.g.prettier_autoformat_require_pragma = 0
 
 
 -- UltiSnips Config

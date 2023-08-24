@@ -7,5 +7,4 @@ require("ts-ls")
 require("statusline")
 require("web-devicons")
 require("file-browser")
-
-
+require("mini")

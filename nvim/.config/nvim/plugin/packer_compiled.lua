@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["mini.nvim"] = {
+    loaded = true,
+    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/nvim-cmp",

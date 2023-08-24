@@ -12,6 +12,8 @@ require('packer').startup(function()
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
+  use { 'echasnovski/mini.nvim' }
+
   -- Intellisense
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'

@@ -1,3 +1,6 @@
 require("plugins")
 require("basics")
 require("remaps")
+require("cpp-ls")
+require("nvim-cmp")
+require("ts-ls")

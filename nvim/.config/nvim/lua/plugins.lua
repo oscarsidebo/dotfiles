@@ -5,7 +5,13 @@ require('packer').startup(function()
   use 'ctrlpvim/ctrlp.vim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
-  
+  use 'nvim-tree/nvim-web-devicons'
+
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  }
+
   -- Intellisense
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -30,6 +36,12 @@ require('packer').startup(function()
   
   -- Colors
   use 'morhetz/gruvbox'
+
+  -- Status bar
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
   
   -- Html
   use 'mattn/emmet-vim'
@@ -46,7 +58,6 @@ require('packer').startup(function()
   
   -- Git CoPilot
   use 'github/copilot.vim'
-  
   use 'szw/vim-maximizer'
 end)
 

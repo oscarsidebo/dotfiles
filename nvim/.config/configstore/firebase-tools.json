@@ -8,7 +8,7 @@
 		"node8DeploysDisabledAfter": 1613390400000,
 		"node8RuntimeDisabledAfter": 1615809600000,
 		"node8WarnAfter": 1600128000000,
-		"fetched": 1646685189830
+		"fetched": 1692144554390
 	},
 	"usage": true,
 	"user": {
@@ -19,19 +19,19 @@
 		"hd": "itsdandi.com",
 		"email": "oscar.sidebo@itsdandi.com",
 		"email_verified": true,
-		"at_hash": "QIykoV1V0btbHG-3Njv5lQ",
-		"iat": 1646685208,
-		"exp": 1646688808
+		"at_hash": "ym-wUPPsnu4GbQBcpnfglg",
+		"iat": 1668532449,
+		"exp": 1668536049
 	},
 	"tokens": {
-		"expires_at": 1646700637516,
-		"refresh_token": "1//01CBaORKA_MhrCgYIARAAGAESNwF-L9Ir4S3IXKrT8u6tcRfp5AI6DA5lxlCcN3mWXksRChFhCkDwPJmAMvt61u7YAOwIKNrewko",
+		"expires_at": 1692148153426,
+		"refresh_token": "1//01r93yOjAqbm-CgYIARAAGAESNwF-L9Ir3BVcZo_JO90zCx77h2S9rjLA8mqya8g-6gsNiMuRkzKUKC6W7c3kdn_lXs9z07ENWLw",
 		"scopes": [],
-		"access_token": "ya29.A0ARrdaM8iHYKYPOXgQKYNV36Db6t9CMdocl2Vrl5OYtKa5IBBPUs-GjivFpmXRdUJ_QOeycIq9YgpGf-TrcEhW7IKEkHwV0TEpZCV9olqqZCzi2vAPk_T90QlSrF8X-aaWcq4Ah443Wkune8XeZwC04FSk0lATNbBRTeO",
+		"access_token": "ya29.a0AfB_byD5pLvIq2Ukvt3Vjn6bcyEjH9m21tvw5QUEo_qQ8taHu9b_1uXBXdAS5drioKXHsDbgoOSlGGRuucKAZd2-e53p4jHAR0RGC-n2tn1FfPhZsbHqBb9AN3_Y8VJuJlmOuUB81jFDstWux0J2iAckHpet1MzwZQZ9MRXV6aVx42ZOaCgYKATcSARASFQHsvYlsfCtpUPcwMA7j31KnerObIA0183",
 		"expires_in": 3599,
-		"scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform",
+		"scope": "https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/firebase openid",
 		"token_type": "Bearer",
-		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNkZDZjYTJhODFkYzJmZWE4YzM2NDI0MzFlN2UyOTZkMmQ3NWI0NDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDI5NzIxMzIzMzU2MzM5MTQ0IiwiaGQiOiJpdHNkYW5kaS5jb20iLCJlbWFpbCI6Im9zY2FyLnNpZGVib0BpdHNkYW5kaS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkJJdG9wSVQ0RDl4aTNBc3dxc2tZVWciLCJpYXQiOjE2NDY2OTcwMzgsImV4cCI6MTY0NjcwMDYzOH0.ZHnINyRM3tBT1ynp0UF_qirOgqpC85Ze7psqcyZ8lOu0YIN7dSlFmbvJc-_5hn3528oewhtY5BA3F3bClkakZGZ-z-y6nP1ju_4tICOInl6_DcQVrFsQ172OhkHS9UsTSG1QY-GlDVVCO_prnvG3KOO0FnBUV6mhx8VF5z3CmzQyfmJJjEuvpJzXGTVGNe1HrUcRluuq-4gAG00RNCuXzUyY2S7HJzh2GlaYaq1GnYmS9sxUM8R2LmMcC2vCJtAmlfrf3YH2mj70vQGe4PaxKrr2LKb0HffErvXSu9lYE6LEPbF1C1JCV9XJIEGPjXIY6tEECTNGOpOK73C0z3zjxQ"
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDI5NzIxMzIzMzU2MzM5MTQ0IiwiaGQiOiJpdHNkYW5kaS5jb20iLCJlbWFpbCI6Im9zY2FyLnNpZGVib0BpdHNkYW5kaS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImQ1bkNyOFRnLThkNXZFUmZOQm50aFEiLCJpYXQiOjE2OTIxNDQ1NTQsImV4cCI6MTY5MjE0ODE1NH0.MdI24MUUntlryMHQbWo-a5RZmih_UUXD-VFsd2KG2DEE3MhKF4WT2ahKNy6xLPES29tVCovuFXCn-d6T9i3iGmhoIcydzeNcrTJI-u-9i_eiSN5kQs2kw6Ubwc7Pd0MxvB2VNXJy6a68hyVNMVr_63zYTFsPuuvnRv_O4M10ZeQh14FSTMGAfAq40x0pUAKl32guOeApFXqO1-ZDHl7PdhInXrUxFtBQTWFEMzx9A9jEsqhiVQlOYjMrlbONnFQ7nw_jUO5c9gIf8wFXqMKCNnV70NdQIet4bI6LgRNGSzjLYNA69FuOulUf5nIiiWCGzD3pM9iwSOHDqS-GWF7g2Q"
 	},
 	"additionalAccounts": [
 		{
@@ -60,5 +60,17 @@
 	],
 	"activeAccounts": {
 		"/Users/oskarsidebo/My Drive/OSCARSIDEBO/Programming/Web Builds/Dandi Project/dandi": "oscar.sidebo@itsdandi.com"
+	},
+	"activeProjects": {
+		"/Users/oskarsidebo/My Drive/OSCARSIDEBO/Programming/Web Builds/Dandi Project/dandi": "dandi-dev"
+	},
+	"emulator-analytics-clientId": "57a6ac04-b7fd-4fd5-8638-12b2a988e82f",
+	"adminsdkconfig": {
+		"dandi-dev": {
+			"projectId": "dandi-dev",
+			"databaseURL": "https://dandi-dev.firebaseio.com",
+			"storageBucket": "dandi-dev.appspot.com",
+			"locationId": "us-central"
+		}
 	}
 }

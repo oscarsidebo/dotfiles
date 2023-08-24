@@ -1,62 +1,94 @@
-snippet rc "React Functional Component" b
-const $1 = ($2) => {
+snippet cl "Console Log" b
+console.log($1)
+endsnippet
 
-	return (
-			$3
-			)
+
+snippet index "slicev2"
+import { XPad, Grid, Stack } from "@oskarengstrom/sage-ui";
+import { SageProviderCMS } from "@/styles/theme";
+import { useTheme, ThemeContext } from "@emotion/react";
+import Section from "@/components/Section";
+
+const $1 = ({ slice }) => {
+  const theme = useTheme(ThemeContext);
+  const {$2,theme:sliceTheme,section_id} = slice.primary;
+
+  return (
+    <SageProviderCMS theme={sliceTheme}>
+      <Section className={slice.slice_type}>
+        <XPad>
+          <Grid {...theme.grid.parent.default}>
+					  $3
+					</Grid>
+        </XPad>
+      </Section>
+    </SageProviderCMS>
+  );
 };
 
 export default $1;
 endsnippet
 
-snippet ufx "Use Effect" b
-useEffect(()=>{
-		$2
 
-		return () => {
+## Layout ##
+snippet BaseSlice "BaseSlice"	
+const $1 = ({ slice }) => {
+  const {section_id,theme,$2} = slice.primary;
 
-		}
-},[$1])
-endsnippet
-
-
-snippet cl "Console Log" b
-console.log($1)
-endsnippet
-
-snippet im "Import Module" b
-import $1 from '$2';
-endsnippet
-
-snippet mq "Media Query" b
-@media only screen and ${$1} {
-	$2
+	return (
+		<SageProviderCMS theme={theme} >
+	  <Section className={slice.slice_type}>	
+			<Anchor id={section_id} />
+			<XPad>
+		  $3
+			</XPad>	
+		</Section>	
+		</SageProviderCMS>	
+			)
 }
+
+export default $1	
 endsnippet
 
-snippet te "create Jest test" b
-describe("$1",()=>{
-		it("$2",()=>{
-			$3
-		})
-})
-endsnippet
+snippet BaseGrid "BaseGrid"	
+  <Grid {...theme.grid.parent.default}>	
+	  $1
+	</Grid>	
+endsnippet	
 
-snippet sm "xState Machine" b
+## Components ##	
+snippet Grid "Grid"	
+	<Grid base={[$1]} $2>	
+	  $3
+	</Grid>	
+endsnippet	
 
-export const $1 = createMachine({
-id:'$1',
-context:{
-$2
-},
-initial:'',
-states:{
-$3
-}
-},{
-actions:{
+snippet GridItem "GridItem"	
+	<Grid.Item $1>	
+	  $2
+	</Grid.Item>	
+endsnippet	
 
-}
-})
+snippet Column "Column"	
+	<Stack $1>	
+	  $2
+	</Stack>	
+endsnippet	
 
-endsnippet
+snippet Row "Row"	
+	<Stack flexDirection="row" alignItems="center" $1 >	
+	  $2
+	</Stack>	
+endsnippet	
+
+snippet Text "Text"	
+	<RichText field={$1}/>	
+endsnippet	
+
+## Utilities
+snippet css "css"
+css={theme=>css$1}
+endsnippet	
+
+
+	

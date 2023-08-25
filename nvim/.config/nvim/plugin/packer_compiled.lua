@@ -99,10 +99,10 @@ _G.packer_plugins = {
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  ["copilot.vim"] = {
+  ["codeium.vim"] = {
     loaded = true,
-    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
+    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
   },
   ["ctrlp.vim"] = {
     loaded = true,

@@ -72,7 +72,7 @@ require('packer').startup(function()
   use 'jparise/vim-graphql'
   
   -- AI
-  use 'github/copilot.vim'
+  use 'Exafunction/codeium.vim'
 
 end)
 

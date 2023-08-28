@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -128,11 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["mini.nvim"] = {
-    loaded = true,
-    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/mini.nvim",
-    url = "https://github.com/echasnovski/mini.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -229,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/oskarsidebo/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
   },
   vimspector = {
     loaded = true,

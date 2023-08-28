@@ -1,7 +1,6 @@
-vim.g.ctrlp_user_command = {'.git', 'cd %s && git ls-files -co --exclude-standard'}
-vim.g.ctrlp_custom_ignore = 'node_modules\\|DS_Store\\|git'
+--vim.g.ctrlp_user_command = {'.git', 'cd %s && git ls-files -co --exclude-standard'}
+--vim.g.ctrlp_custom_ignore = 'node_modules\\|DS_Store\\|git'
 
-vim.g.mapleader = " "
 
 -- Fugitive mappings
 vim.api.nvim_set_keymap('n', '<leader>gd', ':Gvdiffsplit!<CR>', { noremap = true, silent = true })
@@ -9,7 +8,7 @@ vim.api.nvim_set_keymap('n', 'gdh', ':diffget //2<CR>', { noremap = true, silent
 vim.api.nvim_set_keymap('n', 'gdl', ':diffget //3<CR>', { noremap = true, silent = true })
 
 -- VimSpector config
-vim.api.nvim_set_keymap('n', '<Leader>dd', ':call vimspector#Launch()<CR>', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('n', '<Leader>dd', ':call vimspector#Launch()<CR>', { noremap = true, silent = true })
 -- (similar mappings for other VimSpector configs...)
 
 -- Prettier
@@ -39,16 +38,6 @@ vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<cr>', { noremap
 
 -- Maximizer
 vim.api.nvim_set_keymap('n', '<leader>m', ':MaximizerToggle<cr>', { noremap = true, silent = true })
-
--- Basic shortcuts
-vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>v', ':vsp<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>e', ':Ex<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>k', { noremap = true, silent = true })
 
 -- LSP Mappings
 local opts = { noremap = true, silent = true }

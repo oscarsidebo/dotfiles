@@ -7,6 +7,7 @@ require('packer').startup(function()
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-tree/nvim-web-devicons'
   use 'szw/vim-maximizer'
+  use 'christoomey/vim-tmux-navigator'
 
   use({
       "kylechui/nvim-surround",
@@ -22,8 +23,6 @@ require('packer').startup(function()
     "nvim-telescope/telescope-file-browser.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
-
-  use { 'echasnovski/mini.nvim' }
 
   -- Intellisense
   use 'neovim/nvim-lspconfig'
@@ -51,6 +50,7 @@ require('packer').startup(function()
   
   -- Colors
   use 'morhetz/gruvbox'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Status bar
   use {
@@ -73,6 +73,8 @@ require('packer').startup(function()
   
   -- AI
   use 'Exafunction/codeium.vim'
+
+
 
 end)
 

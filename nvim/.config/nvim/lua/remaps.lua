@@ -3,9 +3,9 @@
 
 
 -- Fugitive mappings
-vim.api.nvim_set_keymap('n', '<leader>gd', ':Gvdiffsplit!<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'gdh', ':diffget //2<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'gdl', ':diffget //3<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>gd', ':Gvdiffsplit!<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', 'gdh', ':diffget //2<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', 'gdl', ':diffget //3<CR>', { noremap = true, silent = true })
 
 -- VimSpector config
 -- vim.api.nvim_set_keymap('n', '<Leader>dd', ':call vimspector#Launch()<CR>', { noremap = true, silent = true })
@@ -30,11 +30,11 @@ vim.g.user_emmet_settings = {
 }
 
 -- Find files using Telescope command-line sugar
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope live_grep<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope file_browser<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>fr', ':Telescope registers<cr>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<cr>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<cr>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>fg', ':Telescope live_grep<cr>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope file_browser<cr>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>fr', ':Telescope registers<cr>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<cr>', { noremap = true, silent = true })
 
 -- Maximizer
 vim.api.nvim_set_keymap('n', '<leader>m', ':MaximizerToggle<cr>', { noremap = true, silent = true })

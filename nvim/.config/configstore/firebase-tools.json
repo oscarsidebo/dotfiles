@@ -8,7 +8,7 @@
 		"node8DeploysDisabledAfter": 1613390400000,
 		"node8RuntimeDisabledAfter": 1615809600000,
 		"node8WarnAfter": 1600128000000,
-		"fetched": 1692144554390
+		"fetched": 1708459202743
 	},
 	"usage": true,
 	"user": {
@@ -24,14 +24,14 @@
 		"exp": 1668536049
 	},
 	"tokens": {
-		"expires_at": 1692148153426,
+		"expires_at": 1708462801869,
 		"refresh_token": "1//01r93yOjAqbm-CgYIARAAGAESNwF-L9Ir3BVcZo_JO90zCx77h2S9rjLA8mqya8g-6gsNiMuRkzKUKC6W7c3kdn_lXs9z07ENWLw",
 		"scopes": [],
-		"access_token": "ya29.a0AfB_byD5pLvIq2Ukvt3Vjn6bcyEjH9m21tvw5QUEo_qQ8taHu9b_1uXBXdAS5drioKXHsDbgoOSlGGRuucKAZd2-e53p4jHAR0RGC-n2tn1FfPhZsbHqBb9AN3_Y8VJuJlmOuUB81jFDstWux0J2iAckHpet1MzwZQZ9MRXV6aVx42ZOaCgYKATcSARASFQHsvYlsfCtpUPcwMA7j31KnerObIA0183",
+		"access_token": "ya29.a0AfB_byAZTSCzO0BV7Q3uM8Hing_3OwOzFObRs22u69Y0aCP2fAhErrMBHLupaLF7PGFNp6k2WO69rhT6B-C79DxkxAYxtP2brI3e-S2CQuuvLO5MTYGu9y2HCAu3-24CwHJ0mZ6XZUbYaL5AfEg4ZYbQnQJ2IxSDMeSPrMd38cDkaCgYKAfMSARASFQHGX2MigUDl0n3HLXHQpIfidxJ_Ag0179",
 		"expires_in": 3599,
-		"scope": "https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/firebase openid",
+		"scope": "https://www.googleapis.com/auth/cloud-platform openid https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly",
 		"token_type": "Bearer",
-		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjdjOWM3OGUzYjAwZTFiYjA5MmQyNDZjODg3YjExMjIwYzg3YjdkMjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDI5NzIxMzIzMzU2MzM5MTQ0IiwiaGQiOiJpdHNkYW5kaS5jb20iLCJlbWFpbCI6Im9zY2FyLnNpZGVib0BpdHNkYW5kaS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImQ1bkNyOFRnLThkNXZFUmZOQm50aFEiLCJpYXQiOjE2OTIxNDQ1NTQsImV4cCI6MTY5MjE0ODE1NH0.MdI24MUUntlryMHQbWo-a5RZmih_UUXD-VFsd2KG2DEE3MhKF4WT2ahKNy6xLPES29tVCovuFXCn-d6T9i3iGmhoIcydzeNcrTJI-u-9i_eiSN5kQs2kw6Ubwc7Pd0MxvB2VNXJy6a68hyVNMVr_63zYTFsPuuvnRv_O4M10ZeQh14FSTMGAfAq40x0pUAKl32guOeApFXqO1-ZDHl7PdhInXrUxFtBQTWFEMzx9A9jEsqhiVQlOYjMrlbONnFQ7nw_jUO5c9gIf8wFXqMKCNnV70NdQIet4bI6LgRNGSzjLYNA69FuOulUf5nIiiWCGzD3pM9iwSOHDqS-GWF7g2Q"
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU1YzE4OGE4MzU0NmZjMTg4ZTUxNTc2YmE3MjgzNmUwNjAwZThiNzMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NDI5NzIxMzIzMzU2MzM5MTQ0IiwiaGQiOiJpdHNkYW5kaS5jb20iLCJlbWFpbCI6Im9zY2FyLnNpZGVib0BpdHNkYW5kaS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjduNG1kU2ZmYm04WXlUeWxYd2FlR0EiLCJpYXQiOjE3MDg0NTkyMDIsImV4cCI6MTcwODQ2MjgwMn0.N6X5znFshNpTFJeO30vW6g8WVbGHau62OWPKsJl31Up7Nc1NPu2i3Qdtu5aWEehOcvvo2_OoIGmHGJbmniSUhrulDQuS0bwtIyOcC4T6mk8-y7jofaXFjkWn23OGPE7tldSvoLtMlKZfDi6zB_oMkLMCp3nh49NzD8MX4sWAtcgFbWA6h4jm1HrB5a8zAfhUk0gNzEfuMOIjxjT3irVQiGKgFK8Rw6YthjKl1pMvpOES35Hj_eY10qbaYouTJJu4QmxWoIgtqZO5Jw-_5ik7dJsHxctQzfL-I9i03QBDQ9TQSgHJPPbxmwZ_GNkLaCc_DmZRW4BlE9LfeqSCd8RTzw"
 	},
 	"additionalAccounts": [
 		{
@@ -71,6 +71,33 @@
 			"databaseURL": "https://dandi-dev.firebaseio.com",
 			"storageBucket": "dandi-dev.appspot.com",
 			"locationId": "us-central"
+		}
+	},
+	"previews": {
+		"webframeworks": true
+	},
+	"webconfig": {
+		"dandi-dev": {
+			"projectId": "dandi-dev",
+			"appId": "1:667507631616:web:80d60124702ff195eb5ae5",
+			"databaseURL": "https://dandi-dev.firebaseio.com",
+			"storageBucket": "dandi-dev.appspot.com",
+			"locationId": "us-central",
+			"apiKey": "AIzaSyBtG3dD2UejrGJ8WAzniTznV9MbBlF12js",
+			"authDomain": "dandi-dev.firebaseapp.com",
+			"messagingSenderId": "667507631616",
+			"measurementId": "G-JLDKNQH7X6"
+		},
+		"dandi-184419": {
+			"projectId": "dandi-184419",
+			"appId": "1:11027589147:web:cae15c506af0b4b4fbb0be",
+			"databaseURL": "https://dandi-184419.firebaseio.com",
+			"storageBucket": "dandi-184419.appspot.com",
+			"locationId": "us-central",
+			"apiKey": "AIzaSyDQmaVVbMRTeFbslqJzfa0SnAEdVe5tfc4",
+			"authDomain": "dandi-184419.firebaseapp.com",
+			"messagingSenderId": "11027589147",
+			"measurementId": "G-JQWQ55YRKL"
 		}
 	}
 }

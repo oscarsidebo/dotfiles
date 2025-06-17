@@ -1,7 +1,15 @@
 {
-	"cliLastUpdateCheck": 1708385275150,
-	"authToken": "skPXb62Nk9bQihol3a9BoZkl1J0JnlprvTLCsaF3ESGgP3r2o4jiWctbEVedZzCkMep5ajqHQAYgu0aHS",
+	"cliLastUpdateCheck": 1750090153922,
+	"authToken": "skw9ubFxqmL4ldCVA1g3MWHWCaMZqqNLfwf1XeU9OV3VclpIe7k28QBG8BqWkxq1Xo252P3RUrkIpj5eh",
 	"authType": "normal",
-	"cliHasUpdate": "3.29.1",
-	"cliLastUpdateNag": 1708385274576
+	"cliLastUpdateNag": 1741889826054,
+	"telemetryDisclosed": 1709688254203,
+	"telemetryConsent": {
+		"value": {
+			"type": "telemetry",
+			"status": "denied"
+		},
+		"updatedAt": 1748553549765
+	},
+	"cliHasUpdate": "3.92.0"
 }
